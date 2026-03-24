@@ -13,6 +13,12 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <AuthProvider
+      isSatellite
+      domain="drive.wbit.app"
+      signInUrl="https://portal.wbit.app/sign-in"
+      signUpUrl="https://portal.wbit.app/sign-up"
+      signInForceRedirectUrl="https://drive.wbit.app/drive"
+      signUpForceRedirectUrl="https://drive.wbit.app/drive"
       appearance={{
         baseTheme: dark,
         variables: {
